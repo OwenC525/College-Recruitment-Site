@@ -1,3 +1,15 @@
+.hd-main {
+  text-align: center;
+}
+
+
+.hd-txt {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .img1 {
   position: relative;
         width: 100vw;
@@ -126,3 +138,4 @@ h1.heading {
     background-image: url(images/rutgers-cost.jpg);
   }
 }
+
