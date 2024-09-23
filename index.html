@@ -20,6 +20,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -49,24 +50,6 @@
                         <li class="nav-item">
                           <a class="nav-link" href="explore.html">Explore</a>
                         </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
                     </div>
                   </div>
                   <!--navbar right side btn end-->
@@ -83,15 +66,84 @@
 
         <h1 class="hd-txt hd-main">Welcome to Rutgers!</h1>
 
-        <div>
-        <img class="fostrap-logo" src="images/RU-logo2.png">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button main-txt" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Location and Contact Info
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body main-txt">
+                <strong>Rutgers has 3 main campuses, located in New Brunswick, Newark, and Camden, New Jersey.</strong> They can be located at 57 US Highway 1 New Brunswick, NJ 08901-8554
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed main-txt" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Missions and Values
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body main-txt">
+                <strong>The Rutgers community embraces and upholds the fundamental values that define the university:</strong> academic excellence that's both accessible and affordable; building a community where every single member of the university has a voice; and serving the common good while making a meaningful difference in the world.
+              </div>
+            </div>
+          </div>
         </div>
 
+        
+        <button class="home-btn main-txt" type="button"><a class="a1" href="explore.html">Button</a></button>
+
         </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
+
+        <!--Back to top button https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <section class="">
+          <!-- Footer -->
+          <footer class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Rutgers</h5>
+        
+                  <ul>
+                    <p>New Brunswick, Newark, Camden</p>
+                    <p>57 US Highway 1 New Brunswick, NJ 08901-8554</p>
+                  </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Links</h5>
+        
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="https://www.rutgers.edu/" class="text-body">Official Rutgers Website</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <!--Grid column-->
+        
+              </div>
+              <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+        
+            
+          </footer>
+          <!-- Footer -->
+        </section>
+
         <!-- Bootstrap JavaScript Libraries -->
+        <script src="script.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
